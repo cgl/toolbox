@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git fetch
 
 branch=`git branch | grep \* | cut -d ' ' -f2`
