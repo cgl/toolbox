@@ -20,14 +20,14 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
     git pull origin $BRANCH
-    sudo systemctl restart nginx
+    sudo systemctl restart nginx.service
     sudo systemctl reload php-fpm.service
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
 else
     echo "Diverged"
     git reset --hard origin/$BRANCH
-    sudo systemctl restart nginx
+    sudo systemctl restart nginx.service
     sudo systemctl reload php-fpm.service
 
 fi
