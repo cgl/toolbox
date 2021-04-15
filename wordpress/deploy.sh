@@ -13,6 +13,7 @@ echo upstream: $UPSTREAM;
 echo local: $LOCAL
 echo remote: $REMOTE
 echo base: $BASE
+echo "***************"
 
 if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date"
@@ -30,4 +31,5 @@ else
     sudo systemctl reload php-fpm.service
 
 fi
+echo "***************"
 
