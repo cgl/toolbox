@@ -1,13 +1,13 @@
 # toolbox
 
-Toolbox repo of Cognitionx engineering team. You can find various scripts and documentation 
-available to all engineering teams in this repo.
+Toolbox repo for engineering teams. You can find various scripts and documentation 
+available in this repo.
 
 ## Installation
 
 For installation, clone the repo and add the folder to your PATH.
 ```bash
-$ git clone git@github.com:CognitionX/toolbox.git ~/toolbox
+$ git clone git@github.com:cgl/toolbox.git ~/toolbox
 $ echo 'export PATH=~/toolbox/github-flow/:$PATH' >> ~/.bash_profile
 $ . ~/.bash_profile
 ```
